@@ -1,0 +1,9 @@
+.container {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--gold, #d4af37);
+}
+.container h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}

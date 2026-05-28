@@ -37,7 +37,9 @@ const ContactPage: React.FC = () => {
                 <img src="/gmail.svg" alt="Gmail" />
               </div>
               <div className={styles.flipCardBack}>
-                <a href="mailto:Makwenjemaintanance@gmail.com">Email Us</a>
+                <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`}>
+                  Email Us
+                </a>
               </div>
             </div>
           </div>

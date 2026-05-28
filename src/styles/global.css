@@ -1,5 +1,15 @@
 body.dark-theme {
   background-color: #181717;
   color: #d4af37;
-  font-family: 'Inter', sans-serif;   
+  font-family: "Inter", sans-serif;
+}
+
+.suspense-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-family: "Inter", sans-serif;
+  color: var(--gold, #d4af37);
+  font-size: 1.2rem;
 }

@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import styles from "./Layout.module.css";
+import { Navbar } from "react-bootstrap";
 
 const Header: React.FC = () => {
   return (
     <header>
       <nav className={styles.customNavbar}>
         <div className={styles.brand}>
-          <Link to="/" className={styles.brand}>
+          <Navbar.Brand as={Link} to="/">
             <img
               src="/mk-nav.png"
               alt="MK Logo"
               style={{ height: 30, marginRight: "0.5rem" }}
             />
-            Makwenje Plumbing
-          </Link>
+            {import.meta.env.VITE_SITE_TITLE || "Makwenje Plumbing"}
+          </Navbar.Brand>
         </div>
         <div className={styles.navLinks}>
           <Link to="/" className={`${styles.homeLink} ${styles.link}`}>

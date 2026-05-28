@@ -13,6 +13,16 @@ const HomePage: React.FC = () => {
           name="description"
           content="Makwenje Plumbing – easy. simple. fast."
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Plumber",
+            name: "Makwenje Plumbing",
+            address: { Content: "Cosmo City, Roodepoort, Johannesburg" },
+            telephone: "+27798104508",
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

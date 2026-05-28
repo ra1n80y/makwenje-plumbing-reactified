@@ -1,0 +1,1 @@
+-- Footer jumps in the error handler page
