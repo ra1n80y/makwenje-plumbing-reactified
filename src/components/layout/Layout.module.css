@@ -1,0 +1,71 @@
+/* Base Typography */
+.link {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.customNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #d4af37;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks a {
+  margin-left: 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Glowing hover effects */
+.homeLink:hover {
+  color: #d4af37;
+  text-shadow: 0 0 12px #d4af37, 0 0 20px #d4af37, 0 0 28px #d4af37;
+  transform: scale(1.1);
+}
+.aboutLink:hover {
+  color: #ff4c4c;
+  text-shadow: 0 0 12px #ff4c4c, 0 0 20px #ff4c4c, 0 0 28px #ff4c4c;
+  transform: scale(1.1);
+}
+.contactLink:hover {
+  color: #4cff4c;
+  text-shadow: 0 0 12px #4cff4c, 0 0 20px #4cff4c, 0 0 28px #4cff4c;
+  transform: scale(1.1);
+}
+
+/* Main content */
+.main {
+  padding: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #d4af37;
+}
