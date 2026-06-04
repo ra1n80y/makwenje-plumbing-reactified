@@ -5,14 +5,15 @@ import { describe, it } from "vitest";
 
 const imageModules = import.meta.glob("/public/*.{png,jpg}", {
   eager: true,
-  as: "url",
+  query: "url",
+  import: "default",
 });
-const imageArray = Object.values(imageModules);
+const imageArray = Object.values(imageModules) as string[];
 export default imageArray;
 
 describe("Slideshow", () => {
   it("renders images and handles next/prev clicks", () => {
-    render(<Slideshow images={imageArray} visibleCount={2} />);
+    render(<Slideshow images={imageArray as string[]} visibleCount={2} />);
 
     // All images should be in the document
     imageArray.forEach((_, i) => {
